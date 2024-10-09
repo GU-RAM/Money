@@ -1,1 +1,26 @@
-<p>welcome works!</p>
+<div class="welcome-container">
+  <header></header>
+  <main class="flex">
+    <aside class="w-1/5"></aside>
+    <section class="main-content custom-shape-right w-4/5 flex-col gap-4">
+      <div class="top-left-round">sdfssdfffffdddddddddddddddddddddddddddddddf</div>
+      <nz-input-group [nzSuffix]="suffixIconSearch" class="rounded-lg mb-5 py-3">
+        <input type="text" nz-input placeholder="ძიება..." />
+      </nz-input-group>
+
+      <ng-template #suffixIconSearch>
+        <span nz-icon nzType="search"></span>
+      </ng-template>
+      <ng-template #suffixIconButton>
+        <button nz-button nzType="primary" nzSearch><span nz-icon nzType="search"></span></button>
+      </ng-template>
+      <div class="flex mb-4 gap-4">
+        <choose-category class="w-2/3"></choose-category>
+        <chosen class="w-1/3"></chosen>
+      </div>
+      <div>
+        <popular-services></popular-services>
+      </div>
+    </section>
+  </main>
+</div>

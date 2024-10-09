@@ -1,0 +1,14 @@
+<div class="chosen-container">
+  <div class="chosen-container-header flex justify-between">
+    <h2>რჩეული</h2>
+    <a [routerLink]="['']">მეტის ნახვა</a>
+  </div>
+  <ul class="chosen-content flex flex-wrap gap-x-5 gap-y-5">
+    @for (chosenProduct of chosenProducts; track chosenProduct) {
+    <li class="chosen-content_item w-1/3 content-center flex-grow flex items-center gap-2 justify-center" [routerLink]="['']">
+      <img [src]="imagePath + chosenProduct.img + '.png'" alt="{{ chosenProduct.mobile }}" />
+      <span> {{ chosenProduct.mobile }} </span>
+    </li>
+    }
+  </ul>
+</div>

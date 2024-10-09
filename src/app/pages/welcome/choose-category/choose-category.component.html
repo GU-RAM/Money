@@ -1,0 +1,15 @@
+<div class="choose-category-container">
+  <h2>აირჩიე კატეგორია</h2>
+  <ul class="choose-category-content flex flex-wrap gap-x-5 gap-y-5">
+    @for (category of categories; track category) {
+    <li
+      class="choose-category-content_item w-1/4 content-center flex-grow"
+      nz-tooltip
+      nzTooltipPlacement="bottom"
+      [routerLink]="['']"
+    >
+      {{ category }}
+    </li>
+    }
+  </ul>
+</div>

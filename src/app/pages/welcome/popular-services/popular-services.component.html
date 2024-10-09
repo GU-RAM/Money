@@ -1,0 +1,11 @@
+<div class="popular-services">
+  <div class="popular-services-header flex justify-between">
+    <h2>პოპულარული სერვისები</h2>
+    <a>მეტის ნახვა</a>
+  </div>
+  <div class="popular-services-content grid grid-cols-8 grid-rows-2 gap-3">
+    @for (popularService of popularServices; track popularService) {
+    <div class="flex justify-center"><img [src]="imagePath + popularService + '.png'" alt="{{ popularService }}" /></div>
+    }
+  </div>
+</div>
