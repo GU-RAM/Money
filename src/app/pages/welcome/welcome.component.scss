@@ -4,6 +4,12 @@
   padding-right: 0;
 }
 
+.ant-carousel .slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
 main {
   aside {
     background: linear-gradient(180deg, #8575e5 0%, #4979bc 16.4%);
@@ -24,12 +30,43 @@ main {
     padding-left: 10%;
   }
 
+  .ant-carousel {
+    margin: 40px 0;
+    max-height: 220px;
+  }
+
   [nz-carousel-content] {
     text-align: center;
-    height: 160px;
-    line-height: 160px;
-    background: #364d79;
+    // height: 160px;
+    // line-height: 160px;
     color: #fff;
     overflow: hidden;
+
+    .carousel-text {
+      width: 220px;
+    }
+
+    .carousel-btn {
+      padding: 10px;
+      border-radius: 10px;
+      background: #ffffff29;
+      display: inline-block;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .carousel-btn:hover {
+      transform: scale(1.1);
+      background-color: #ffffff50;
+    }
+
+    .carousel-btn:active {
+      transform: scale(0.95);
+    }
+
+    // div {
+    //   height: 50px;
+    // }
   }
 }

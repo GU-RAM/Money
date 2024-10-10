@@ -1,7 +1,7 @@
 <div class="welcome-container">
   <header></header>
   <main class="flex">
-    <aside class="w-1/5">
+    <aside class="w-1/5" id="main-sidebar">
       <img src="" alt="" />
       <ul class="flex flex-col gap-8">
         <div>
@@ -15,11 +15,14 @@
         }
       </ul>
       <div>
-        <nz-carousel nzAutoPlay>
+        <nz-carousel>
           @for (img of mainSidebarCarouselData; track $index) {
           <div nz-carousel-content>
-            <h3><img [src]="'assets/images/' + img + '.png'" alt="" /></h3>
-            <div>გაიგე მეტი</div>
+            <div class="flex justify-center flex-col items-center">
+              <h3><img [src]="'assets/images/' + img + '.png'" alt="" /></h3>
+              <div class="carousel-text">გადაიხადეთ მასტერქარდით და მიიღე დამატებით ფასდაკლება</div>
+            </div>
+            <div class="carousel-btn" [routerLink]="['/routePath']" routerLinkActive="router-link-active">გაიგე მეტი</div>
           </div>
           }
         </nz-carousel>

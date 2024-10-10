@@ -7,6 +7,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { ASIDE_DATA, MAIN_SIDEBAR_CAROUSEL_DATA } from './models';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzCarouselModule } from 'ng-zorro-antd/carousel';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-welcome',
@@ -19,6 +20,8 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     NzInputModule,
     NzIconModule,
     NzCarouselModule,
+    RouterOutlet,
+    RouterLink,
   ],
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss'],
