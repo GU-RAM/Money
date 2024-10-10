@@ -1,28 +1,26 @@
 .welcome-container {
   margin: 0 auto;
   padding: 30px;
+  padding-right: 0;
 }
 
-.custom-shape-right {
-  // height: calc(100vh - 300px);
-  background: #f6f8f8;
-  position: relative;
-  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
-  border-radius: 10px; /* Apply roundness to the whole div */
-  // padding: 20px;25%
-  // margin: 30px;
-  // overflow: scroll; /* Ensures the round corners are visible */
-  padding: 20px;
-  padding-left: 10%;
-  position: relative;
+main {
+  aside {
+    background: linear-gradient(0deg, #8575e5 0%, #4979bc 16.4%);
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
+    margin-right: -68px;
+  }
 
-  .top-left-round {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    border-radius: 20px;
+  .custom-shape-right {
+    // height: calc(100vh - 300px);
+    background: #f6f8f8;
+    position: relative;
+    clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+    border-radius: 10px;
+    // padding: 20px;25%
+    // margin: 30px;
+    padding: 20px;
+    padding-left: 10%;
   }
 }

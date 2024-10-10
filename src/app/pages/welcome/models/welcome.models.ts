@@ -52,6 +52,14 @@ export const POPULAR = [
   'magti',
 ];
 
+export const ASIDE_DATA = [
+  { icon: 'appstore', name: 'გადახდები' },
+  { icon: 'send', name: 'გადარიცხვები' },
+  { icon: 'sync', name: 'კონვერტაცია' },
+  { icon: 'container', name: 'ბალანსი' },
+  { icon: 'bar-chart', name: 'ფინანსები' },
+];
+
 export interface Chosen {
   img: string;
   mobile: number;

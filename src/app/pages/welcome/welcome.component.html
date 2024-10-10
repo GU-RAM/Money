@@ -1,7 +1,17 @@
 <div class="welcome-container">
   <header></header>
   <main class="flex">
-    <aside class="w-1/5"></aside>
+    <aside class="w-1/5">
+      <img src="" alt="" />
+      <ul class="flex flex-col gap-8">
+        @for(asideNav of asideNavData; track $index) {
+        <li class="">
+          <span nz-icon [nzType]="asideNav.icon" nzTheme="outline"></span>
+          {{ asideNav.name }}
+        </li>
+        }
+      </ul>
+    </aside>
     <section class="main-content custom-shape-right w-4/5 flex-col gap-4">
       <div class="top-left-round">sdfssdfffffdddddddddddddddddddddddddddddddf</div>
       <nz-input-group [nzSuffix]="suffixIconSearch" class="rounded-lg mb-5 py-3">
