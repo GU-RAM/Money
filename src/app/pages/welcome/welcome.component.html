@@ -4,6 +4,9 @@
     <aside class="w-1/5">
       <img src="" alt="" />
       <ul class="flex flex-col gap-8">
+        <div>
+          <img src="assets/images/logo.png" alt="" />
+        </div>
         @for(asideNav of asideNavData; track $index) {
         <li class="">
           <span nz-icon [nzType]="asideNav.icon" nzTheme="outline"></span>
@@ -11,6 +14,16 @@
         </li>
         }
       </ul>
+      <div>
+        <nz-carousel nzAutoPlay>
+          @for (img of mainSidebarCarouselData; track $index) {
+          <div nz-carousel-content>
+            <h3><img [src]="'assets/images/' + img + '.png'" alt="" /></h3>
+            <div>გაიგე მეტი</div>
+          </div>
+          }
+        </nz-carousel>
+      </div>
     </aside>
     <section class="main-content custom-shape-right w-4/5 flex-col gap-4">
       <div class="top-left-round">sdfssdfffffdddddddddddddddddddddddddddddddf</div>

@@ -60,6 +60,8 @@ export const ASIDE_DATA = [
   { icon: 'bar-chart', name: 'ფინანსები' },
 ];
 
+export const MAIN_SIDEBAR_CAROUSEL_DATA = ['magti', 'magti', 'magti'];
+
 export interface Chosen {
   img: string;
   mobile: number;

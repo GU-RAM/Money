@@ -6,7 +6,7 @@
 
 main {
   aside {
-    background: linear-gradient(0deg, #8575e5 0%, #4979bc 16.4%);
+    background: linear-gradient(180deg, #8575e5 0%, #4979bc 16.4%);
     border-radius: 10px;
     clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
     margin-right: -68px;
@@ -22,5 +22,14 @@ main {
     // margin: 30px;
     padding: 20px;
     padding-left: 10%;
+  }
+
+  [nz-carousel-content] {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
   }
 }
